@@ -1,14 +1,11 @@
 {
     "name": "gumbo",
     "description": "node.js db",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": "Craig Condon",
     "repository": {
         "type": "git",
         "url": "http://github.com/spiceapps/gumbo.git"
-    },
-    "bin": {
-        "guava": "./bin/server"
     },
     "directories" :   { "lib" : "./lib" },
     "dependencies": {
@@ -18,5 +15,5 @@
         "cashew":"*"
     },
     
-    "main": "./lib/node/index.js"
+    "main": "./lib/index.js"
 }
