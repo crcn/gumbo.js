@@ -12,7 +12,8 @@
         "sk":"*",
         "structr":"*",
         "guava":"*",
-        "cashew":"*"
+        "cashew":"*",
+        "node-fs":"*"
     },
     
     "main": "./lib/index.js"
