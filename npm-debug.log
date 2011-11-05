@@ -1,0 +1,562 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'publish', '--force' ]
+info using npm@1.0.103
+info using node@v0.4.12
+verbose config file /Users/craig/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose config file /usr/local/lib/node_modules/npm/npmrc
+verbose publish [ '.' ]
+silly testEngine { name: 'gumbo',
+silly testEngine   description: 'node.js db',
+silly testEngine   version: '0.1.0',
+silly testEngine   author: { name: 'Craig Condon' },
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/spiceapps/gumbo.git' },
+silly testEngine   directories: { lib: './lib' },
+silly testEngine   dependencies: 
+silly testEngine    { sk: '*',
+silly testEngine      structr: '*',
+silly testEngine      guava: '*',
+silly testEngine      cashew: '*',
+silly testEngine      'node-fs': '*' },
+silly testEngine   main: './lib/index.js',
+silly testEngine   _npmUser: { name: 'architectd', email: 'craig@spiceapps.com' },
+silly testEngine   _id: 'gumbo@0.1.0',
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.103',
+silly testEngine   _nodeVersion: 'v0.4.12',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   scripts: {} }
+verbose caching /Users/craig/Dropbox/Developer/Public/gumbo/package.json
+verbose loadDefaults gumbo@0.1.0
+info prepublish gumbo@0.1.0
+verbose cache add [ '.', null ]
+silly cache add: name, spec, args [ undefined, '.', [ '.', null ] ]
+verbose parsed url { pathname: '.', href: '.' }
+silly testEngine { name: 'gumbo',
+silly testEngine   description: 'node.js db',
+silly testEngine   version: '0.1.0',
+silly testEngine   author: { name: 'Craig Condon' },
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/spiceapps/gumbo.git' },
+silly testEngine   directories: { lib: './lib' },
+silly testEngine   dependencies: 
+silly testEngine    { sk: '*',
+silly testEngine      structr: '*',
+silly testEngine      guava: '*',
+silly testEngine      cashew: '*',
+silly testEngine      'node-fs': '*' },
+silly testEngine   main: './lib/index.js',
+silly testEngine   _npmUser: { name: 'architectd', email: 'craig@spiceapps.com' },
+silly testEngine   _id: 'gumbo@0.1.0',
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.103',
+silly testEngine   _nodeVersion: 'v0.4.12',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   path: '/Users/craig/Dropbox/Developer/Public/gumbo' }
+verbose caching package.json
+verbose loadDefaults gumbo@0.1.0
+verbose pack /Users/craig/Dropbox/Developer/Public/gumbo /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/tmp.tgz
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903'
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588'
+verbose mkdir done: /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588 755
+verbose mkdir'ed /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588
+verbose tar about to write tar and gzip it.
+silly tar args [ '-czvf', '-', '-T', '-' ]
+silly spawning [ 'tar',
+silly spawning   [ '-czvf', '-', '-T', '-' ],
+silly spawning   '/Users/craig/Dropbox/Developer/Public' ]
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents'
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents/___package.npm'
+verbose mkdir done: /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents/___package.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly spawning [ 'tar',
+silly spawning   [ '-zmvxpf',
+silly spawning     '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/tmp.tgz',
+silly spawning     '-o' ],
+silly spawning   '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents/___package.npm' ]
+silly tar err x gumbo/.cupboard
+silly tar err x gumbo/.gitignore
+silly tar err x gumbo/MIT-LICENSE.txt
+silly tar err x gumbo/package.json
+silly tar err x gumbo/README.md
+silly tar err x gumbo/examples/index.js
+silly tar err x gumbo/lib/collection.js
+silly tar err x gumbo/lib/index.js
+silly tar err x gumbo/lib/test.js
+silly tar err x gumbo/lib/core/collection.js
+silly tar err x gumbo/lib/core/database.js
+silly tar err x gumbo/lib/core/index.js
+silly tar err x gumbo/lib/core/utils.js
+silly tar err x gumbo/lib/core/persist/fs/index.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents/___package.npm/gumbo
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents/___package.npm/gumbo/.cupboard
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents/___package.npm/gumbo/.gitignore
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents/___package.npm/gumbo/MIT-LICENSE.txt
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents/___package.npm/gumbo/package.json
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents/___package.npm/gumbo/README.md
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents/___package.npm/gumbo/examples
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents/___package.npm/gumbo/examples/index.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents/___package.npm/gumbo/lib
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents/___package.npm/gumbo/lib/collection.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents/___package.npm/gumbo/lib/index.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents/___package.npm/gumbo/lib/test.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents/___package.npm/gumbo/lib/core
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents/___package.npm/gumbo/lib/core/collection.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents/___package.npm/gumbo/lib/core/database.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents/___package.npm/gumbo/lib/core/index.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents/___package.npm/gumbo/lib/core/utils.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents/___package.npm/gumbo/lib/core/persist
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents/___package.npm/gumbo/lib/core/persist/fs
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents/___package.npm/gumbo/lib/core/persist/fs/index.js
+silly chmod .gitignore 755
+silly chmod MIT-LICENSE.txt 755
+silly chmod package.json 755
+silly chmod index.js 755
+silly chmod collection.js 755
+silly chmod index.js 755
+silly chmod test.js 755
+silly chmod collection.js 755
+silly chmod database.js 755
+silly chmod index.js 755
+silly chmod utils.js 755
+silly chmod index.js 755
+verbose gunzed /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents/___package.npm/gumbo
+verbose rm'ed /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents/package
+verbose renamed [ '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents/___package.npm/gumbo',
+verbose renamed   '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents/package' ]
+silly testEngine { name: 'gumbo',
+silly testEngine   description: 'node.js db',
+silly testEngine   version: '0.1.0',
+silly testEngine   author: { name: 'Craig Condon' },
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/spiceapps/gumbo.git' },
+silly testEngine   directories: { lib: './lib' },
+silly testEngine   dependencies: 
+silly testEngine    { sk: '*',
+silly testEngine      structr: '*',
+silly testEngine      guava: '*',
+silly testEngine      cashew: '*',
+silly testEngine      'node-fs': '*' },
+silly testEngine   main: './lib/index.js',
+silly testEngine   _npmUser: { name: 'architectd', email: 'craig@spiceapps.com' },
+silly testEngine   _id: 'gumbo@0.1.0',
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.103',
+silly testEngine   _nodeVersion: 'v0.4.12',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   path: '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents/package' }
+verbose caching /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents/package/package.json
+verbose loadDefaults gumbo@0.1.0
+verbose tarball contents [ 'package' ]
+verbose from cache /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents/package/package.json
+verbose pack /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents/package /Users/craig/.npm/gumbo/0.1.0/package.tgz
+verbose mkdir'ed /Users/craig/.npm/gumbo/0.1.0
+verbose tar about to write tar and gzip it.
+silly tar args [ '-czvf', '-', '-T', '-' ]
+silly spawning [ 'tar',
+silly spawning   [ '-czvf', '-', '-T', '-' ],
+silly spawning   '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526663903-0.10312105272896588/contents' ]
+verbose mkdir (expected) error ENOENT, No such file or directory '/Users/craig/.npm/gumbo/0.1.0/___package.npm'
+verbose mkdir done: /Users/craig/.npm/gumbo/0.1.0/___package.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /Users/craig/.npm/gumbo/0.1.0/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly spawning [ 'tar',
+silly spawning   [ '-zmvxpf',
+silly spawning     '/Users/craig/.npm/gumbo/0.1.0/package.tgz',
+silly spawning     '-o' ],
+silly spawning   '/Users/craig/.npm/gumbo/0.1.0/___package.npm' ]
+silly tar err x package/.cupboard
+silly tar err x package/.gitignore
+silly tar err x package/MIT-LICENSE.txt
+silly tar err x package/package.json
+silly tar err x package/README.md
+silly tar err x package/examples/index.js
+silly tar err x package/lib/collection.js
+silly tar err x package/lib/index.js
+silly tar err x package/lib/test.js
+silly tar err x package/lib/core/collection.js
+silly tar err x package/lib/core/database.js
+silly tar err x package/lib/core/index.js
+silly tar err x package/lib/core/utils.js
+silly tar err x package/lib/core/persist/fs/index.js
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/.cupboard
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/.gitignore
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/MIT-LICENSE.txt
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/package.json
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/README.md
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/examples
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/examples/index.js
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/lib
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/lib/collection.js
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/lib/index.js
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/lib/test.js
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/lib/core
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/lib/core/collection.js
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/lib/core/database.js
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/lib/core/index.js
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/lib/core/utils.js
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/lib/core/persist
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/lib/core/persist/fs
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/lib/core/persist/fs/index.js
+verbose gunzed /Users/craig/.npm/gumbo/0.1.0/___package.npm/package
+verbose rm'ed /Users/craig/.npm/gumbo/0.1.0/package
+verbose renamed [ '/Users/craig/.npm/gumbo/0.1.0/___package.npm/package',
+verbose renamed   '/Users/craig/.npm/gumbo/0.1.0/package' ]
+silly testEngine { name: 'gumbo',
+silly testEngine   description: 'node.js db',
+silly testEngine   version: '0.1.0',
+silly testEngine   author: { name: 'Craig Condon' },
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/spiceapps/gumbo.git' },
+silly testEngine   directories: { lib: './lib' },
+silly testEngine   dependencies: 
+silly testEngine    { sk: '*',
+silly testEngine      structr: '*',
+silly testEngine      guava: '*',
+silly testEngine      cashew: '*',
+silly testEngine      'node-fs': '*' },
+silly testEngine   main: './lib/index.js',
+silly testEngine   _npmUser: { name: 'architectd', email: 'craig@spiceapps.com' },
+silly testEngine   _id: 'gumbo@0.1.0',
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.103',
+silly testEngine   _nodeVersion: 'v0.4.12',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   dist: 
+silly testEngine    { shasum: 'cacf95909356a02be3739d1a8d448861d5495e35',
+silly testEngine      tarball: 'http://registry.npmjs.org/gumbo/-/gumbo-0.1.0.tgz' } }
+verbose caching /Users/craig/.npm/gumbo/0.1.0/package/package.json
+verbose loadDefaults gumbo@0.1.0
+silly updated sha bytes 10240
+info shasum 1bf4dfbe737224e28f5212541188cd28f3d77600
+info shasum /Users/craig/.npm/gumbo/0.1.0/package.tgz
+verbose from cache /Users/craig/.npm/gumbo/0.1.0/package/package.json
+verbose chmod /Users/craig/.npm/gumbo/0.1.0/package.tgz 644
+verbose chown [ '/Users/craig/.npm/gumbo/0.1.0/package.tgz',
+verbose chown   501,
+verbose chown   20 ]
+silly publish { name: 'gumbo',
+silly publish   description: 'node.js db',
+silly publish   version: '0.1.0',
+silly publish   author: { name: 'Craig Condon' },
+silly publish   repository: 
+silly publish    { type: 'git',
+silly publish      url: 'git://github.com/spiceapps/gumbo.git' },
+silly publish   directories: { lib: './lib' },
+silly publish   dependencies: 
+silly publish    { sk: '*',
+silly publish      structr: '*',
+silly publish      guava: '*',
+silly publish      cashew: '*',
+silly publish      'node-fs': '*' },
+silly publish   main: './lib/index.js',
+silly publish   _npmUser: { name: 'architectd', email: 'craig@spiceapps.com' },
+silly publish   _id: 'gumbo@0.1.0',
+silly publish   devDependencies: {},
+silly publish   engines: { node: '*' },
+silly publish   _engineSupported: true,
+silly publish   _npmVersion: '1.0.103',
+silly publish   _nodeVersion: 'v0.4.12',
+silly publish   _defaultsLoaded: true,
+silly publish   dist: 
+silly publish    { shasum: 'cacf95909356a02be3739d1a8d448861d5495e35',
+silly publish      tarball: 'http://registry.npmjs.org/gumbo/-/gumbo-0.1.0.tgz' } }
+verbose PUT gumbo
+verbose raw, before any munging gumbo
+verbose url resolving [ 'https://registry.npmjs.org/', './gumbo' ]
+verbose url resolved https://registry.npmjs.org/gumbo
+verbose GET gumbo
+verbose raw, before any munging gumbo
+verbose url resolving [ 'https://registry.npmjs.org/', './gumbo' ]
+verbose url resolved https://registry.npmjs.org/gumbo
+info Already published gumbo@0.1.0
+verbose uploading bin dists []
+WARN publish Forced publish over gumbo@0.1.0
+verbose GET gumbo
+verbose raw, before any munging gumbo
+verbose url resolving [ 'https://registry.npmjs.org/', './gumbo' ]
+verbose url resolved https://registry.npmjs.org/gumbo
+verbose etag "5SRRQBE2SI1Q9CNN16XPJ6866"
+silly get cb [ 200,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.1.1 (Erlang OTP/R14B04)',
+silly get cb     etag: '"1I94TGDTJKFBRM0BWPS0IBK3"',
+silly get cb     date: 'Sat, 05 Nov 2011 20:57:50 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '8474' } ]
+verbose removing attachments { shasum: '237902a90ed6bfef123ca4748b0edef392779f71',
+verbose removing attachments   tarball: 'http://registry.npmjs.org/gumbo/-/gumbo-0.1.0.tgz' }
+verbose PUT gumbo/-rev/121-6fc1de9fd3f5c3c92405b4455e7f13b9
+verbose raw, before any munging gumbo/-rev/121-6fc1de9fd3f5c3c92405b4455e7f13b9
+verbose url resolving [ 'https://registry.npmjs.org/',
+verbose url resolving   './gumbo/-rev/121-6fc1de9fd3f5c3c92405b4455e7f13b9' ]
+verbose url resolved https://registry.npmjs.org/gumbo/-rev/121-6fc1de9fd3f5c3c92405b4455e7f13b9
+verbose GET gumbo
+verbose raw, before any munging gumbo
+verbose url resolving [ 'https://registry.npmjs.org/', './gumbo' ]
+verbose url resolved https://registry.npmjs.org/gumbo
+silly get cb [ 200,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.1.1 (Erlang OTP/R14B04)',
+silly get cb     etag: '"52OD4EY28TCLWD1R3XAPAFA4P"',
+silly get cb     date: 'Sat, 05 Nov 2011 20:57:51 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '7708' } ]
+info detach /gumbo/-/gumbo-0.1.0.tgz/-rev/122-2256b75e8c3d19a6212a880c6c34ac11
+verbose DELETE /gumbo/-/gumbo-0.1.0.tgz/-rev/122-2256b75e8c3d19a6212a880c6c34ac11
+verbose raw, before any munging /gumbo/-/gumbo-0.1.0.tgz/-rev/122-2256b75e8c3d19a6212a880c6c34ac11
+verbose url resolving [ 'https://registry.npmjs.org/',
+verbose url resolving   './gumbo/-/gumbo-0.1.0.tgz/-rev/122-2256b75e8c3d19a6212a880c6c34ac11' ]
+verbose url resolved https://registry.npmjs.org/gumbo/-/gumbo-0.1.0.tgz/-rev/122-2256b75e8c3d19a6212a880c6c34ac11
+verbose publish [ '.' ]
+verbose from cache /Users/craig/Dropbox/Developer/Public/gumbo/package.json
+info prepublish gumbo@0.1.0
+verbose cache add [ '.', null ]
+silly cache add: name, spec, args [ undefined, '.', [ '.', null ] ]
+verbose parsed url { pathname: '.', href: '.' }
+verbose from cache package.json
+verbose pack /Users/craig/Dropbox/Developer/Public/gumbo /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/tmp.tgz
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412'
+verbose mkdir done: /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412 755
+verbose mkdir'ed /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412
+verbose tar about to write tar and gzip it.
+silly tar args [ '-czvf', '-', '-T', '-' ]
+silly spawning [ 'tar',
+silly spawning   [ '-czvf', '-', '-T', '-' ],
+silly spawning   '/Users/craig/Dropbox/Developer/Public' ]
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents'
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents/___package.npm'
+verbose mkdir done: /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents/___package.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly spawning [ 'tar',
+silly spawning   [ '-zmvxpf',
+silly spawning     '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/tmp.tgz',
+silly spawning     '-o' ],
+silly spawning   '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents/___package.npm' ]
+silly tar err x gumbo/.cupboard
+silly tar err x gumbo/.gitignore
+silly tar err x gumbo/MIT-LICENSE.txt
+silly tar err x gumbo/package.json
+silly tar err x gumbo/README.md
+silly tar err x gumbo/examples/index.js
+silly tar err x gumbo/lib/collection.js
+silly tar err x gumbo/lib/index.js
+silly tar err x gumbo/lib/test.js
+silly tar err x gumbo/lib/core/collection.js
+silly tar err x gumbo/lib/core/database.js
+silly tar err x gumbo/lib/core/index.js
+silly tar err x gumbo/lib/core/utils.js
+silly tar err x gumbo/lib/core/persist/fs/index.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents/___package.npm/gumbo
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents/___package.npm/gumbo/.cupboard
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents/___package.npm/gumbo/.gitignore
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents/___package.npm/gumbo/MIT-LICENSE.txt
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents/___package.npm/gumbo/package.json
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents/___package.npm/gumbo/README.md
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents/___package.npm/gumbo/examples
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents/___package.npm/gumbo/examples/index.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents/___package.npm/gumbo/lib
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents/___package.npm/gumbo/lib/collection.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents/___package.npm/gumbo/lib/index.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents/___package.npm/gumbo/lib/test.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents/___package.npm/gumbo/lib/core
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents/___package.npm/gumbo/lib/core/collection.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents/___package.npm/gumbo/lib/core/database.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents/___package.npm/gumbo/lib/core/index.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents/___package.npm/gumbo/lib/core/utils.js
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents/___package.npm/gumbo/lib/core/persist
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents/___package.npm/gumbo/lib/core/persist/fs
+silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents/___package.npm/gumbo/lib/core/persist/fs/index.js
+silly chmod .gitignore 755
+silly chmod MIT-LICENSE.txt 755
+silly chmod package.json 755
+silly chmod index.js 755
+silly chmod collection.js 755
+silly chmod index.js 755
+silly chmod test.js 755
+silly chmod collection.js 755
+silly chmod database.js 755
+silly chmod index.js 755
+silly chmod utils.js 755
+silly chmod index.js 755
+verbose gunzed /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents/___package.npm/gumbo
+verbose rm'ed /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents/package
+verbose renamed [ '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents/___package.npm/gumbo',
+verbose renamed   '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents/package' ]
+silly testEngine { name: 'gumbo',
+silly testEngine   description: 'node.js db',
+silly testEngine   version: '0.1.0',
+silly testEngine   author: { name: 'Craig Condon' },
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/spiceapps/gumbo.git' },
+silly testEngine   directories: { lib: './lib' },
+silly testEngine   dependencies: 
+silly testEngine    { sk: '*',
+silly testEngine      structr: '*',
+silly testEngine      guava: '*',
+silly testEngine      cashew: '*',
+silly testEngine      'node-fs': '*' },
+silly testEngine   main: './lib/index.js',
+silly testEngine   _npmUser: { name: 'architectd', email: 'craig@spiceapps.com' },
+silly testEngine   _id: 'gumbo@0.1.0',
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.103',
+silly testEngine   _nodeVersion: 'v0.4.12',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   path: '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents/package' }
+verbose caching /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents/package/package.json
+verbose loadDefaults gumbo@0.1.0
+verbose tarball contents [ 'package' ]
+verbose from cache /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents/package/package.json
+verbose pack /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents/package /Users/craig/.npm/gumbo/0.1.0/package.tgz
+verbose mkdir (expected) error ENOENT, No such file or directory '/Users/craig/.npm/gumbo/0.1.0'
+verbose mkdir done: /Users/craig/.npm/gumbo/0.1.0 755
+verbose mkdir'ed /Users/craig/.npm/gumbo/0.1.0
+verbose tar about to write tar and gzip it.
+silly tar args [ '-czvf', '-', '-T', '-' ]
+silly spawning [ 'tar',
+silly spawning   [ '-czvf', '-', '-T', '-' ],
+silly spawning   '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526663903/1320526670483-0.06525406776927412/contents' ]
+verbose mkdir (expected) error ENOENT, No such file or directory '/Users/craig/.npm/gumbo/0.1.0/___package.npm'
+verbose mkdir done: /Users/craig/.npm/gumbo/0.1.0/___package.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /Users/craig/.npm/gumbo/0.1.0/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly spawning [ 'tar',
+silly spawning   [ '-zmvxpf',
+silly spawning     '/Users/craig/.npm/gumbo/0.1.0/package.tgz',
+silly spawning     '-o' ],
+silly spawning   '/Users/craig/.npm/gumbo/0.1.0/___package.npm' ]
+silly tar err x package/.cupboard
+silly tar err x package/.gitignore
+silly tar err x package/MIT-LICENSE.txt
+silly tar err x package/package.json
+silly tar err x package/README.md
+silly tar err x package/examples/index.js
+silly tar err x package/lib/collection.js
+silly tar err x package/lib/index.js
+silly tar err x package/lib/test.js
+silly tar err x package/lib/core/collection.js
+silly tar err x package/lib/core/database.js
+silly tar err x package/lib/core/index.js
+silly tar err x package/lib/core/utils.js
+silly tar err x package/lib/core/persist/fs/index.js
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/.cupboard
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/.gitignore
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/MIT-LICENSE.txt
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/package.json
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/README.md
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/examples
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/examples/index.js
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/lib
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/lib/collection.js
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/lib/index.js
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/lib/test.js
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/lib/core
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/lib/core/collection.js
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/lib/core/database.js
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/lib/core/index.js
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/lib/core/utils.js
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/lib/core/persist
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/lib/core/persist/fs
+silly asyncMap in gTP /Users/craig/.npm/gumbo/0.1.0/___package.npm/package/lib/core/persist/fs/index.js
+verbose gunzed /Users/craig/.npm/gumbo/0.1.0/___package.npm/package
+verbose rm'ed /Users/craig/.npm/gumbo/0.1.0/package
+verbose renamed [ '/Users/craig/.npm/gumbo/0.1.0/___package.npm/package',
+verbose renamed   '/Users/craig/.npm/gumbo/0.1.0/package' ]
+verbose from cache /Users/craig/.npm/gumbo/0.1.0/package/package.json
+silly updated sha bytes 10240
+info shasum cacf95909356a02be3739d1a8d448861d5495e35
+info shasum /Users/craig/.npm/gumbo/0.1.0/package.tgz
+verbose from cache /Users/craig/.npm/gumbo/0.1.0/package/package.json
+verbose chmod /Users/craig/.npm/gumbo/0.1.0/package.tgz 644
+verbose chown [ '/Users/craig/.npm/gumbo/0.1.0/package.tgz',
+verbose chown   501,
+verbose chown   20 ]
+silly publish { name: 'gumbo',
+silly publish   description: 'node.js db',
+silly publish   version: '0.1.0',
+silly publish   author: { name: 'Craig Condon' },
+silly publish   repository: 
+silly publish    { type: 'git',
+silly publish      url: 'git://github.com/spiceapps/gumbo.git' },
+silly publish   directories: { lib: './lib' },
+silly publish   dependencies: 
+silly publish    { sk: '*',
+silly publish      structr: '*',
+silly publish      guava: '*',
+silly publish      cashew: '*',
+silly publish      'node-fs': '*' },
+silly publish   main: './lib/index.js',
+silly publish   _npmUser: { name: 'architectd', email: 'craig@spiceapps.com' },
+silly publish   _id: 'gumbo@0.1.0',
+silly publish   devDependencies: {},
+silly publish   engines: { node: '*' },
+silly publish   _engineSupported: true,
+silly publish   _npmVersion: '1.0.103',
+silly publish   _nodeVersion: 'v0.4.12',
+silly publish   _defaultsLoaded: true,
+silly publish   dist: 
+silly publish    { shasum: 'cacf95909356a02be3739d1a8d448861d5495e35',
+silly publish      tarball: 'http://registry.npmjs.org/gumbo/-/gumbo-0.1.0.tgz' } }
+verbose PUT gumbo
+verbose raw, before any munging gumbo
+verbose url resolving [ 'https://registry.npmjs.org/', './gumbo' ]
+verbose url resolved https://registry.npmjs.org/gumbo
+verbose GET gumbo
+verbose raw, before any munging gumbo
+verbose url resolving [ 'https://registry.npmjs.org/', './gumbo' ]
+verbose url resolved https://registry.npmjs.org/gumbo
+verbose PUT gumbo/0.1.0/-tag/latest
+verbose raw, before any munging gumbo/0.1.0/-tag/latest
+verbose url resolving [ 'https://registry.npmjs.org/',
+verbose url resolving   './gumbo/0.1.0/-tag/latest' ]
+verbose url resolved https://registry.npmjs.org/gumbo/0.1.0/-tag/latest
+ERR! Error sending version data
+ERR! Error: forbidden _npmUser must be a current maintainer.
+ERR! maintainers=[{"name":"architectd","email":"craig.j.condon@gmail.com"}]
+ERR! current user={"name":"architectd","email":"craig.j.condon@gmail.com"}: gumbo/0.1.0/-tag/latest
+ERR!     at Request.callback (/usr/local/lib/node_modules/npm/lib/utils/npm-registry-client/request.js:181:12)
+ERR!     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/main.js:346:18)
+ERR!     at Request.emit (events.js:64:17)
+ERR!     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/main.js:314:16)
+ERR!     at IncomingMessage.emit (events.js:81:20)
+ERR!     at HTTPParser.onMessageComplete (http.js:133:23)
+ERR!     at CleartextStream.ondata (http.js:1231:22)
+ERR!     at CleartextStream._push (tls.js:303:27)
+ERR!     at SecurePair.cycle (tls.js:577:20)
+ERR!     at EncryptedStream.write (tls.js:96:13)
+ERR! Report this *entire* log at:
+ERR!     <http://github.com/isaacs/npm/issues>
+ERR! or email it to:
+ERR!     <npm-@googlegroups.com>
+ERR! 
+ERR! System Darwin 11.2.0
+ERR! command "node" "/usr/local/bin/npm" "publish" "--force"
+ERR! cwd /Users/craig/Dropbox/Developer/Public/gumbo
+ERR! node -v v0.4.12
+ERR! npm -v 1.0.103
+verbose exit [ 1, true ]
