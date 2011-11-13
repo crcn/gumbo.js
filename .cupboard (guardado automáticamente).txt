@@ -1,5 +1,0 @@
-[project]
-name = gumbo
-[commands]
-publish =npm publish --force, git add ., git commit -m " $@ "
-, push origin master
