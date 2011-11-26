@@ -2,7 +2,22 @@
 	"folders":
 	[
 		{
-			"path": "/Users/craig/.cupboard/projects/gumbo"
+			"path": "."
+		}
+	],
+	"build_systems":
+	[
+		{
+			"name":"cbd make",
+			"cmd":["cbd","make","gumbo"]
+		},
+		{
+			"name":"cbd start",
+			"cmd":["cbd","start","gumbo"]
+		},
+		{
+			"name":"cbd make+start",
+			"cmd":["cbd","make+start","gumbo"]
 		}
 	]
 }
