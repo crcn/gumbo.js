@@ -5,7 +5,7 @@
     "author": "Craig Condon",
     "repository": {
         "type": "git",
-        "url": "http://github.com/spiceapps/gumbo.git"
+        "url": "http://github.com/crcn/gumbo.git"
     },
     "directories" :   { "lib" : "./lib" },
     "dependencies": {
@@ -14,7 +14,7 @@
         "guava":"*",
         "cashew":"*",
         "node-fs":"*",
-        "ini":"git+https://github.com/spiceapps/ini.git",
+        "ini":"git+https://github.com/crcn/ini.git",
         "malt":"*"
     },
     
