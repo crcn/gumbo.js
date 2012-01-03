@@ -2,11 +2,11 @@ Gumbo - node.js database modeled after mongodb
 ----------------------------------------------
 
 
+## Features
 
-What does it support?
----------------------
-
-see (sift)[/crcn/sift]
+- Mongodb queries. See (sift)[/crcn/sift]
+- .ini files
+- .json files
 
 Examples:
 ---------
