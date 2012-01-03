@@ -11,7 +11,7 @@
     "dependencies": {
         "sk":"*",
         "structr":"*",
-        "guava":"*",
+        "guava":"0.0.5",
         "cashew":"*",
         "node-fs":"*",
         "ini":"git+https://github.com/crcn/ini.git",
