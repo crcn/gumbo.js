@@ -4,7 +4,7 @@ Gumbo - node.js database modeled after mongodb
 
 ## Features
 
-- Mongodb queries. See (sift)[/crcn/sift]
+- Mongodb queries. See [sift](/crcn/sift)
 - .ini files
 - .json files
 
