@@ -1,23 +1,23 @@
 {
-    "name": "gumbo",
-    "description": "node.js db",
-    "version": "0.1.3",
-    "author": "Craig Condon",
-    "repository": {
-        "type": "git",
-        "url": "http://github.com/crcn/gumbo.git"
-    },
-    "directories": {
-        "lib": "./lib"
-    },
-    "dependencies": {
-        "sk": "*",
-        "structr": "*",
-        "sift": "<0.1.0",
-        "cashew": "*",
-        "node-fs": "*",
-        "ini": "git+https://github.com/crcn/ini.git",
-        "malt": "*"
-    },
-    "main": "./lib/index.js"
+  "name": "gumbo",
+  "description": "node.js db",
+  "version": "0.1.3",
+  "author": "Craig Condon",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/crcn/gumbo.git"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "dependencies": {
+    "sk": "*",
+    "structr": "*",
+    "sift": "<0.1.0",
+    "cashew": "*",
+    "node-fs": "*",
+    "ini": "git+https://github.com/crcn/ini.git",
+    "malt": "*"
+  },
+  "main": "./lib/index.js"
 }
