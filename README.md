@@ -1,10 +1,10 @@
 ## mongodb-like collections
 
 ```javascript
-var Collection = require("gumbo").Collection;
+var gumbo = require("gumbo");
 
 
-var col = new Collection([
+var col = gumbo.collection([
 	{
 		name: "craig",
 		age: 99
@@ -17,17 +17,85 @@ var col = new Collection([
 ]);
 
 
-col.findSync({ age: { $lt: 100 } }).limit(1).exec().watch({
-		insert: function(item, index) {
+//synchronous
+var people = col.find({ age: { $gt: 100 } }).sync();
 
-		},
-		remove: function(item, index) {
 
-		},
-		update: function(item, index) {
+//asynchronous
+col.find({ age: { $gt: 100 } }).limit(10).skip(1).sort({ age: -1 }).exec(function(err, people) {
+	
+});
 
-		}
+
+//watching 
+col.watch({ age: {$gt: 100 } }, {
+	insert: function(item) {
+		console.log("insert %s", item.get("_id"));
+	},
+	update: function(item) {
+
+	},
+	remove: function(item) {
+
+	}
+});
+
+
+//inserting synchronously - will trigger
+col.insert({ name: "john", age: 101 }).sync();
+```
+
+## API
+
+### gumbo.collection(source, modelClass)
+
+creates a new collection
+
+`source` - the source for the collection.
+`modelClass` - the model class for the source.
+
+## Collection API
+
+### Iterator collection.insert(items)
+
+### Iterator collection.update(search, set)
+
+### Query collection.find(search)
+
+### Query collection.findOne(search)
+
+### Query collection.watch(search, observers)
+
+## Iterator API
+
+basic example:
+
+```javascript
+
+//update, and return the modified items
+collection.update({ name: "craig" }, { $set: { age: 55 }}).capture().exec(function(err, modifiedItems) {
+	
 });
 
 
 ```
+
+### iterator.chunkSize(count)
+
+defines the chunk size when executing asynchronous tasks 
+
+### iterator.capture()
+
+captures any found / modified items  
+
+### iterator.exec(cb)
+
+executes the iterator asynchronously
+
+### Array iterator.sync()
+
+exetures the iterator synchronously, and returns the result
+
+
+
+
