@@ -1,34 +1,33 @@
-Gumbo - node.js database modeled after mongodb
-----------------------------------------------
-
-
-## Features
-
-- Mongodb queries. See [sift](/crcn/sift)
-- .ini files
-- .json files
-
-Examples:
----------
+## mongodb-like collections
 
 ```javascript
-
-var gumbo = require('gumbo');
-
-
-var users = gumbo.collection('users');
+var Collection = require("gumbo").Collection;
 
 
-users.insert({ user: 'craig', last: 'condon' }, function(err, item)
-{
-	console.log("ALWAYS MUCH SUCCESS!!");
-
-	users.findOne({ _id: item._id }, function()
+var col = new Collection([
 	{
-		console.log("BLARG")
-	})
-});
+		name: "craig",
+		age: 99
+	},
+	{
+		name: "tim",
+		age: 104
+	}
+}
+]);
 
+
+col.findSync({ age: { $lt: 100 } }).limit(1).exec().watch({
+		insert: function(item, index) {
+
+		},
+		remove: function(item, index) {
+
+		},
+		update: function(item, index) {
+
+		}
+});
 
 
 ```
