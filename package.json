@@ -1,7 +1,7 @@
 {
   "name": "gumbo",
   "description": "node.js db",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "author": "Craig Condon",
   "repository": {
     "type": "git",
@@ -15,7 +15,8 @@
     "sift": "0.0.x",
     "structr": "0.2.x",
     "underscore": "1.4.x",
-    "fiddle": "0.0.x"
+    "fiddle": "0.0.x",
+    "structr-step": "0.0.x"
   },
   "main": "./lib/index.js"
 }
