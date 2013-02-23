@@ -66,6 +66,12 @@ creates a new collection
 
 ### Query collection.watch(search, observers)
 
+watches the collection for any particular changes
+
+### Synchronizer collection.syncTo(targetCollection)
+
+synchronizes the data from one collection to another collection
+
 ## Iterator API
 
 basic example:
