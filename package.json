@@ -1,7 +1,7 @@
 {
   "name": "gumbo",
   "description": "node.js db",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "author": "Craig Condon",
   "repository": {
     "type": "git",
