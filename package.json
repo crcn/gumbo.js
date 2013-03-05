@@ -21,7 +21,7 @@
     "disposable": "0.0.x",
     "expect.js": "0.2.x",
     "toarray": "0.0.x",
-    "tq": "0.0.x",
+    "tq": "0.1.x",
     "cstep": "0.0.x",
     "async": "0.2.x"
   },
