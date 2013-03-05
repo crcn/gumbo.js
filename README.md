@@ -1,4 +1,4 @@
-## mongodb-like collections
+## mongodb-like collections [![Build Status](https://secure.travis-ci.org/crcn/gumbo.js.png)](https://secure.travis-ci.org/crcn/gumbo.js)
 
 ```javascript
 var gumbo = require("gumbo");
