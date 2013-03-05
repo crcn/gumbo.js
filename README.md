@@ -16,12 +16,6 @@ var col = gumbo.collection([
 }
 ]);
 
-
-//synchronous
-var people = col.find({ age: { $gt: 100 } }).sync();
-
-
-//asynchronous
 col.find({ age: { $gt: 100 } }).limit(10).skip(1).sort({ age: -1 }).exec(function(err, people) {
 	
 });
@@ -41,8 +35,6 @@ col.watch({ age: {$gt: 100 } }, {
 });
 
 
-//inserting synchronously - will trigger
-col.insert({ name: "john", age: 101 }).sync();
 ```
 
 ## API
