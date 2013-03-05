@@ -77,6 +77,22 @@ describe("collection async", function() {
     }));
   });
 
+  it("can limit items", function(done) {
+    collection.findAll().limit(1).exec(outcome.e(done).s(function(items) {
+      expect(items.length).to.be(1);
+      expect(items[0].get("age")).to.be(28);
+      done();
+    }));
+  });
+
+  it("can skip items", function(done) {
+    collection.findAll().skip(2).limit(1).exec(outcome.e(done).s(function(items) {
+      expect(items.length).to.be(1);
+      expect(items[0].get("age")).to.be(21);
+      done();
+    }));
+  })
+
 
   it("can remove certain ages", function(done) {
     collection.remove({age:21}, done);
@@ -87,6 +103,6 @@ describe("collection async", function() {
       expect(items.length).to.be(2);
       done();
     }); 
-  })
+  });
 
 })
