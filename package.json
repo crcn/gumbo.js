@@ -1,7 +1,7 @@
 {
   "name": "gumbo",
   "description": "node.js db",
-  "version": "0.5.1",
+  "version": "0.5.3",
   "author": "Craig Condon",
   "repository": {
     "type": "git",
@@ -21,9 +21,9 @@
     "disposable": "0.0.x",
     "expect.js": "0.2.x",
     "toarray": "0.0.x",
-    "tq": "0.1.x",
+    "tq": "0.2.x",
     "cstep": "0.0.x",
-    "async": "0.2.x"
+    "step": "0.0.x"
   },
   "devDependencies": {
     "chai": "1.5.x",

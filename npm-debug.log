@@ -1,0 +1,53 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/n/versions/0.8.19/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'adduser' ]
+2 info using npm@1.2.11
+3 info using node@v0.8.19
+4 verbose adduser before first PUT { name: 'couchdb2',
+4 verbose adduser   salt: 'XXXXX',
+4 verbose adduser   password_sha: 'XXXXX',
+4 verbose adduser   email: 'craig.j.condon@gmail.com',
+4 verbose adduser   _id: 'org.couchdb.user:couchdb2',
+4 verbose adduser   type: 'user',
+4 verbose adduser   roles: [],
+4 verbose adduser   date: '2013-03-07T22:43:04.805Z' }
+5 verbose url raw /-/user/org.couchdb.user:couchdb2
+6 verbose url resolving [ 'http://npm.classdojo.com:5984/registry/_design/app/_rewrite/',
+6 verbose url resolving   './-/user/org.couchdb.user:couchdb2' ]
+7 verbose url resolved http://npm.classdojo.com:5984/registry/_design/app/_rewrite/-/user/org.couchdb.user:couchdb2
+8 info trying registry request attempt 1 at 14:43:04
+9 http PUT http://npm.classdojo.com:5984/registry/_design/app/_rewrite/-/user/org.couchdb.user:couchdb2
+10 info retry will retry, error on last attempt: Error: connect ECONNREFUSED
+11 info trying registry request attempt 2 at 14:43:15
+12 http PUT http://npm.classdojo.com:5984/registry/_design/app/_rewrite/-/user/org.couchdb.user:couchdb2
+13 info retry will retry, error on last attempt: Error: connect ECONNREFUSED
+14 info trying registry request attempt 3 at 14:44:15
+15 http PUT http://npm.classdojo.com:5984/registry/_design/app/_rewrite/-/user/org.couchdb.user:couchdb2
+16 verbose adduser back [ { [Error: connect ECONNREFUSED]
+16 verbose adduser     code: 'ECONNREFUSED',
+16 verbose adduser     errno: 'ECONNREFUSED',
+16 verbose adduser     syscall: 'connect' },
+16 verbose adduser   undefined,
+16 verbose adduser   undefined ]
+17 error Error: connect ECONNREFUSED
+17 error     at errnoException (net.js:770:11)
+17 error     at Object.afterConnect [as oncomplete] (net.js:761:19)
+17 error  { [Error: connect ECONNREFUSED]
+17 error   code: 'ECONNREFUSED',
+17 error   errno: 'ECONNREFUSED',
+17 error   syscall: 'connect' }
+18 error If you are behind a proxy, please make sure that the
+18 error 'proxy' config is set properly.  See: 'npm help config'
+19 error System Darwin 12.2.0
+20 error command "/usr/local/n/versions/0.8.19/bin/node" "/usr/local/bin/npm" "adduser"
+21 error cwd /Users/craig/Developer/Public/gumbo.js
+22 error node -v v0.8.19
+23 error npm -v 1.2.11
+24 error syscall connect
+25 error code ECONNREFUSED
+26 error errno ECONNREFUSED
+27 error stack Error: connect ECONNREFUSED
+27 error stack     at errnoException (net.js:770:11)
+27 error stack     at Object.afterConnect [as oncomplete] (net.js:761:19)
+28 verbose exit [ 1, true ]

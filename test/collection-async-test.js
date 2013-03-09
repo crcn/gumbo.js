@@ -99,10 +99,10 @@ describe("collection async", function() {
   });
 
   it("has still has ages > 21", function(done) {
-    collection.find({age:{$gt:21}}, function(err, items) {
+    collection.find({age:{$gt:21}}, outcome.e(done).s(function(items) {
       expect(items.length).to.be(2);
       done();
-    }); 
+    }));
   });
 
 })
