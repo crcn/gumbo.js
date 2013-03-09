@@ -104,5 +104,4 @@ describe("collection async", function() {
       done();
     }));
   });
-
-})
+});

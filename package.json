@@ -5,7 +5,7 @@
   "author": "Craig Condon",
   "repository": {
     "type": "git",
-    "url": "http://github.com/crcn/gumbo.git"
+    "url": "http://github.com/crcn/gumbo.js.git"
   },
   "directories": {
     "lib": "./lib"
@@ -30,7 +30,7 @@
     "mocha": "1.8.x"
   },
   "scripts": {
-    "test": "mocha --reporter list"
+    "test": "mocha --reporter min"
   },
   "main": "./lib/index.js"
 }
